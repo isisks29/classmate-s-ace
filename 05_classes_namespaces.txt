@@ -1,0 +1,159 @@
+==========================================================================================
+CLASSES & NAMESPACES (by parent namespace of all symbols)
+==========================================================================================
+16     /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+59     /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+16     /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+65     /System/Library/Frameworks/Foundation.framework/Foundation
+36     /System/Library/Frameworks/Metal.framework/Metal
+29     /System/Library/Frameworks/MetalKit.framework/MetalKit
+4      /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+20     /System/Library/Frameworks/Security.framework/Security
+74     /System/Library/Frameworks/UIKit.framework/UIKit
+159    /usr/lib/libSystem.B.dylib
+11     /usr/lib/libc++.1.dylib
+6      /usr/lib/libc++.1.dylib > std
+5      /usr/lib/libc++.1.dylib > std > bad_array_new_length
+2      /usr/lib/libc++.1.dylib > std > chrono > steady_clock
+4      /usr/lib/libc++.1.dylib > std > length_error
+2      /usr/lib/libc++.1.dylib > std > logic_error
+6      /usr/lib/libc++.1.dylib > std > mutex
+4      /usr/lib/libc++.1.dylib > std > out_of_range
+18     /usr/lib/libc++.1.dylib > std > string
+39     /usr/lib/libobjc.A.dylib
+6      /usr/lib/libz.1.dylib
+2      CADisplayLink
+32847  GLOBAL
+1      MTKTextureLoader
+25     MTKView
+3      MTLDepthStencilDescriptor
+17     MTLRenderPipelineDescriptor
+3      MTLTextureDescriptor
+10     MTLVertexDescriptor
+2      NSArray
+4      NSBundle
+1      NSCharacterSet
+5      NSData
+3      NSDate
+3      NSDateFormatter
+3      NSDictionary
+1      NSError
+7      NSFileManager
+1      NSKeyedArchiver
+1      NSKeyedUnarchiver
+2      NSLocale
+3      NSMutableArray
+1      NSMutableData
+4      NSMutableDictionary
+5      NSMutableString
+4      NSNotificationCenter
+2      NSNumber
+2      NSObject
+4      NSRegularExpression
+1      NSRunLoop
+2      NSScanner
+8      NSString
+1      NSThread
+2      NSTimeZone
+1      NSTimer
+1      NSURL
+2      NSURLCache
+2      NSURLProtocol
+5      NSURLSession
+2      NSURLSessionConfiguration
+10     NSUserDefaults
+1      UIAlertAction
+2      UIAlertController
+12     UIApplication
+2      UIColor
+6      UIDevice
+1      UIImage
+1      UIImageView
+3      UIPasteboard
+4      UIScreen
+1      UITapGestureRecognizer
+1      UITextField
+17     UIView
+1      UIViewController
+2      UIWindow
+29     _0x1E6B7A93
+14     _0x37C8E2B6
+10     _0x3A9E5B62
+1      _0x6D1C8F45
+16     _0x6E3B8D52
+46     _0x7D3B5E28
+30     _0x8B4F26C1
+2      _0x8C2F4D71
+3      _0xA6C1F894
+29     _0xA91D5F47
+9      _0xB1D7F3A9
+7      _0xC8E2A541
+18     _0xD4E9A3C7
+17     _0xD5A13E79
+14     _0xE4A91C73
+8      _0xF2A74C19
+2      objc > category_t
+34     objc > class_rw_t
+34     objc > class_t
+12     objc > ivar_list_t
+27     objc > method_list_t
+19     objc > objc_property_list
+14     objc > protocol_list_t
+6      objc > protocol_t
+1      std > bad_array_new_length
+2      std > length_error
+2      std > out_of_range
+7      switchD_0003ccec
+53     switchD_000577c0
+22     switchD_000577f4
+8      switchD_00057824
+9      switchD_0005a030
+9      switchD_0005a700
+9      switchD_0005af98
+9      switchD_0005b668
+9      switchD_0005c56c
+9      switchD_0005d16c
+9      switchD_0005da94
+9      switchD_0005e500
+12     switchD_0007a394
+7      switchD_0007a56c
+13     switchD_0007a700
+13     switchD_0007a838
+13     switchD_0007ae94
+19     switchD_00081370
+18     switchD_0008138c
+8      switchD_00096dc0
+8      switchD_00096e30
+8      switchD_0009720c
+13     switchD_000c72c4
+16     switchD_000c7380
+16     switchD_000c7680
+16     switchD_000c794c
+16     switchD_000c7dfc
+13     switchD_000cbce0
+16     switchD_000cbd9c
+16     switchD_000cc09c
+16     switchD_000cc368
+16     switchD_000cc80c
+13     switchD_000f9dcc
+7      switchD_00102da0
+7      switchD_00103adc
+7      switchD_00103e70
+8      switchD_001072a0
+9      switchD_00107a84
+34     switchD_00109328
+7      switchD_001098c4
+7      switchD_00117620
+27     switchD_0011a6e0
+10     switchD_0011ac44
+9      switchD_0011accc
+9      switchD_0011ad48
+7      switchD_0011b7bc
+12     switchD_00129f1c
+9      switchD_00130540
+7      switchD_001308a4
+7      switchD_00139b44
+7      switchD_0013d070
+7      switchD_0013d654
+7      switchD_00140610
+35     switchD_0014cf04

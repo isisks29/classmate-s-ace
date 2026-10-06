@@ -1,0 +1,12 @@
+==========================================================================================
+GHIDRA ANALYSIS OVERVIEW
+==========================================================================================
+Program: input.dylib
+Language: AARCH64/little/64/AppleSilicon
+CompilerSpec: ghidra.program.database.ProgramCompilerSpec@5411a529
+ImageBase: 00000000
+ExecutableFormat: Mac OS X Mach-O
+Defined symbols: 12780
+Import symbols: 557
+Functions: 3209
+Memory blocks: 39

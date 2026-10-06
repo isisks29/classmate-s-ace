@@ -1,0 +1,110 @@
+==========================================================================================
+HARDCODED KEYS / PATHS / URLS (73)
+==========================================================================================
+00000b60         /Library/1.dylib
+00000c88         /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+00000ce8         /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+00000d40         /System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+00000da8         /System/Library/Frameworks/Security.framework/Security
+00000df8         /System/Library/Frameworks/Accelerate.framework/Accelerate
+00000e50         /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+00000ea8         /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+00000f00         /usr/lib/libz.1.dylib
+00000f30         /System/Library/Frameworks/Foundation.framework/Foundation
+00000f88         /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+00000fe0         /System/Library/Frameworks/UIKit.framework/UIKit
+00001030         /System/Library/Frameworks/Metal.framework/Metal
+00001080         /usr/lib/libSystem.B.dylib
+000010b8         /usr/lib/libc++.1.dylib
+000010e8         /System/Library/Frameworks/MetalKit.framework/MetalKit
+00001138         /usr/lib/libobjc.A.dylib
+003bea30         uretoken
+003beb30         com.apple.LSDocucom.apple.identicom.apple.signat
+003dc92d         allKeys
+003dcb86         passwordDataForService:account:
+003dcd6c         setPassword:forService:account:
+003dd0b2         T@"NSData",C,N,V_passwordData
+003dd45b         setBool:forKey:
+003dd774         _passwordData
+003ddac6         boolForKey:
+003ddb27         canBecomeKeyWindow
+003ddfd3         deletePasswordForService:account:
+003ddff5         deletePasswordForService:account:error:
+003de09c         dictionaryWithObjects:forKeys:count:
+003de37b         integerForKey:
+003de41d         keyWindow
+003de497         localizedStringForKey:value:table:
+003de66c         objectForKey:
+003de67a         objectForKeyedSubscript:
+003de6cf         password
+003de6d8         passwordData
+003de6e5         passwordDataForService:account:error:
+003de70b         passwordForService:account:
+003de727         passwordForService:account:error:
+003de749         passwordObject
+003de8f8         propertyForKey:inRequest:
+003dea4a         removeObjectForKey:
+003dec5f         setAutocapitalizationType:
+003defa2         setObject:forKey:
+003defb4         setObject:forKeyedSubscript:
+003deffd         setPassword:
+003df00a         setPassword:forService:account:error:
+003df030         setPasswordData:
+003df041         setPasswordData:forService:account:
+003df065         setPasswordData:forService:account:error:
+003df08f         setPasswordObject:
+003df0bf         setProperty:forKey:inRequest:
+003df5a0         stringForKey:
+003e21c6         #include <metal_stdlib>
+using namespace metal;
+
+struct Uniforms {
+    float4x4 projectionMatrix;
+};
+
+struct VertexIn {
+    float2 position  [[attribute(0)]];
+    float2 texCoords [[attribute(1)]];
+    uchar4 color     [[attribute(2)]];
+};
+
+struct VertexOut {
+    float4 position [[position]];
+    float2 texCoords;
+    float4 color;
+};
+
+vertex VertexOut vertex_main(VertexIn in                 [[stage_in]],
+                             constant Uniforms &uniforms [[buffer(1)]]) {
+    VertexOut out;
+    out.position = uniforms.projectionMatrix * float4(in.position, 0, 1);
+    out.texCoords = in.texCoords;
+    out.color = float4(in.color) / float4(255.0);
+    return out;
+}
+
+fragment half4 fragment_main(VertexOut in [[stage_in]],
+                             texture2d<half, access::sample> texture [[texture(0)]]) {
+    constexpr sampler linearSampler(coord::normalized, min_filter::linear, mag_filter::linear, mip_filter::linear);
+    half4 texColor = texture.sample(linearSampler, in.texCoords);
+    return half4(in.color) * texColor;
+}
+
+003e270a         encrypted_key
+003e2779         SAMKeychain
+003e278c         SAMKeychainErrorBadArguments
+003e28a3         com.samsoffes.samkeychain
+003e297a         libsystem_kernel.dylib
+003e29da         /usr/lib/dyld
+00400606         _kSecClassGenericPassword
+0040065e         _kSecReturnAttributes
+00400676         _kSecReturnData
+004007a9         _NSLocalizedDescriptionKey
+0040089a         _OBJC_CLASS_$_NSKeyedArchiver
+004008bc         _OBJC_CLASS_$_NSKeyedUnarchiver
+00404fdd         _NSLocalizedDescriptionKey
+00405223         _OBJC_CLASS_$_NSKeyedArchiver
+00405241         _OBJC_CLASS_$_NSKeyedUnarchiver
+004063e3         _kSecClassGenericPassword
+00406433         _kSecReturnAttributes
+00406449         _kSecReturnData
